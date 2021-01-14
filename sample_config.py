@@ -6,10 +6,10 @@ class Config(object):
     # The Telegram API things
     APP_ID = int(os.environ.get("APP_ID", 12345))
     API_HASH = os.environ.get("API_HASH")
-    OWNER_ID = int(os.environ.get("OWNER_ID", 1204927413))
+    OWNER_ID = int(os.environ.get("OWNER_ID", 1268206396))
     # Get these values from my.telegram.org
     # to store the channel ID who are authorized to use the bot
-    AUTH_CHANNEL = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "").split())
+    AUTH_CHANNEL = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "-1001331815943").split())
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Telegram maximum file upload size
@@ -35,14 +35,14 @@ class Config(object):
     # add offensive API
     TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", None)
     CUSTOM_FILE_NAME = os.environ.get("CUSTOM_FILE_NAME", "")
-    LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "gen@Universal_leecher_Robot")
-    YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl@Universal_leecher_Robot")
+    LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech2")
+    YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
     DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "downloads")
-    CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel@Universal_leecher_Robot")
+    CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel@")
     GET_SIZE_G = os.environ.get("GET_SIZE_G", "getsize")
-    STATUS_COMMAND = os.environ.get("STATUS_COMMAND", "status@Universal_leecher_Robot")
-    SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "savethumbnail@Universal_leecher_Robot")
-    CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumbnail@Universal_leecher_Robot")
-    UPLOAD_AS_DOC = os.environ.get("UPLOAD_AS_DOC", "upload_as_doc@Universal_leecher_Robot")
-    PYTDL_COMMAND_G = os.environ.get("PYTDL_COMMAND_G", "pytdl@Universal_leecher_Robot")
-    LOG_COMMAND = os.environ.get("LOG_COMMAND", "log@Universal_leecher_Robot")
+    STATUS_COMMAND = os.environ.get("STATUS_COMMAND", "status")
+    SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "savethumbnail")
+    CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumbnail")
+    UPLOAD_AS_DOC = os.environ.get("UPLOAD_AS_DOC", "upload_as_doc")
+    PYTDL_COMMAND_G = os.environ.get("PYTDL_COMMAND_G", "pytdl")
+    LOG_COMMAND = os.environ.get("LOG_COMMAND", "log")
